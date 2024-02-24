@@ -1,0 +1,170 @@
+﻿<Window x:Class="Banka.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banka"
+        mc:Ignorable="d"
+        Title="Banka" Height="350" Width="900" WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow">
+
+    <Window.Background>
+        <ImageBrush ImageSource="C:\Users\Pheob\OneDrive\Desktop\PIS-BANKA\Banka\stock.jpg"/>
+    </Window.Background>
+
+    <Window.BorderBrush>
+        <SolidColorBrush Color="LightBlue"/>
+    </Window.BorderBrush>
+    <Window.BorderThickness>
+        <Thickness>1</Thickness>
+    </Window.BorderThickness>
+
+ 
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Height="30" VerticalAlignment="Top" Width="auto" Orientation="Horizontal" >
+            <Button x:Name="btnKlijent" Content="Klijenti" Height="30" Width="80" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnKlijent_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnZaposleni" Content="Zaposleni" Height="30" Width="85" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnZaposleni_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnRacun" Content="Racuni" Height="30" Width="76" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnRacun_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnTipRacuna" Content="Tipovi racuna" Height="30" Width="115" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnTipRacuna_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnKartica" Content="Kartice" Height="30" Width="74" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnKartica_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnTipKartice" Content="Tipovi kartice" Height="30" Width="115" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnTipKartice_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnTransakcija" Content="Transakcije" Height="30" Width="95" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnTransakcija_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnTipTransakcije" Content="Tipovi Transakcije" Height="30" Width="146" VerticalAlignment="Top" Click="btnTipTransakcije_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnKredit" Content="Krediti" Height="30" Width="86" VerticalAlignment="Top" HorizontalAlignment="Left" Click="btnKredit_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Height="30" VerticalAlignment="Bottom" Width="auto" Orientation="Horizontal"  >
+            <Button x:Name="btnDodaj"  Content="Dodaj" Height="30" Width="120" Click="btnDodaj_Click">
+                <Button.Background>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="Gray"/>
+
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnIzmeni" Content="Izmeni" Height="30" Width="120" Click="btnIzmeni_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+            <Button x:Name="btnObrisi" Content="Obrisi" Height="30" Width="120" Click="btnObrisi_Click">
+            <Button.Background>
+                <SolidColorBrush Color="Gray"/>
+            </Button.Background>
+                <Button.Foreground>
+                    <SolidColorBrush Color="LightBlue"/>
+                </Button.Foreground>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.FontWeight>Bold</Button.FontWeight>
+            </Button>
+
+        </StackPanel>
+
+        <DataGrid x:Name="dataGridCentral" HorizontalAlignment="Center" MaxHeight="150" VerticalAlignment="Center" Width="auto"
+                  IsReadOnly="True"  CanUserAddRows="False" SelectionUnit="FullRow" SelectionMode="Single"   BorderThickness="7">
+        <!--  ne moze da se menja pisanjem vec pomocu dugmica, svaki drugi red u roze, korisnik ne moze dodati redove, moze se samo selektovati red, ne mozemo selektovati vise redova odjednom -->
+        <DataGrid.Background>
+            <SolidColorBrush Color="White"/>
+        </DataGrid.Background>
+        <DataGrid.Foreground>
+            <SolidColorBrush Color="DimGray"/>
+        </DataGrid.Foreground>
+        <DataGrid.BorderBrush>
+            <SolidColorBrush Color="White"/>
+        </DataGrid.BorderBrush>
+        <DataGrid.AlternatingRowBackground>
+            <SolidColorBrush Color="LightBlue"/>
+        </DataGrid.AlternatingRowBackground>
+            </DataGrid>
+        
+    </Grid>
+</Window>

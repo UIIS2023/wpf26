@@ -1,0 +1,21 @@
+﻿<Window x:Class="Banka.Forme.frmTipRacuna"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banka.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni tip racuna" Height="160" Width="330"
+        Background="LightBlue" Icon="C:\Users\Pheob\OneDrive\Desktop\PIS-BANKA\Banka\banka.png"  Foreground="Gray"
+        WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Label Content="Naziv tipa racuna"   HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtNazivTipaRacuna" Margin="170,20,0,0" HorizontalAlignment="Left"   VerticalAlignment="Top" Height="23" Width="120" TextWrapping="Wrap"/>
+
+        <Button  x:Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="63,78,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click"/><!-- dodali smo atribut klik u xaml koji ima vrednos naziva fukcije-->
+        <Button x:Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="222,78,0,0"  Height="20" VerticalAlignment="Top" Click="btnOtkazi_Click"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Forme\frmKartica.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmKlijent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmKredit.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmRacun.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmTipKartice.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmTipRacuna.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmTipTransakcije.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmTransakcije.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\frmZaposleni.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Forme\Login.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Forme\frmKartica.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmKlijent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmKredit.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmRacun.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmTipKartice.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmTipRacuna.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmTipTransakcije.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmTransakcije.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\frmZaposleni.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Forme\Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
